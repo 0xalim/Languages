@@ -1,0 +1,20 @@
+#!/usr/bin/sh
+
+# Script that greets and asks for name, if no input +/ whitespace then
+# ask for it infinitely until some 'string' is input
+# Rwxrob - Greeting
+
+set -e
+greetings() {
+	while true; do
+		echo "Hi what is your name?"
+		read -r name
+		if [ -n "$name" -a "$name" != " " ]; then
+			printf 'Hi %s, how was your day?' "$name"
+			break
+		fi
+		echo "Correct input please!"
+	done
+}
+
+greetings

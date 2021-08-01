@@ -1,0 +1,11 @@
+#!/usr/bin/sh
+
+# Script that prints 'Hey there' + user input
+# Rwxrob - Hey there 2
+
+set -e
+hey_there_x() {
+	echo "Hey there $@"
+}
+
+hey_there_x $@

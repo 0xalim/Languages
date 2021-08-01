@@ -1,0 +1,22 @@
+#!/usr/bin/sh
+
+# Script that prints out strings dependant on user input
+# Rwxrob - Hi you
+
+set -e
+hey_var() {
+	if test -z "$1";then
+		echo "Hi you."
+		return
+	elif test "$1" = "ash";then
+		echo "Woah ash, you rock!"
+		return
+	elif test "$1" = "Dork";then
+		echo "Um, no need to be rude."
+		return
+	else
+		echo "Hi $1"
+	fi
+}
+
+hey_var "$1"

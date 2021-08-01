@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+# Script that introduces echo command + use of variables and functions
+# in shell syntax
+# Rwxrob - Hello World
+
+world="world"
+
+hello_world() {
+	echo "hello $world"
+}
+
+hello_world
