@@ -1,0 +1,25 @@
+#!/usr/bin/sh
+
+set -e
+read_input() {
+
+	prefix="$1"
+
+	while true; do
+
+		read -p "input: " input
+		if [ -z "${input}" -o "${input}" == " " ]; then
+			echo "Commenting done!"
+			break
+		fi
+
+		if [ -z "${1}" ]; then
+			printf '# %s\n' "${input}"
+		elif [ -n "${1}"  ]; then
+			printf '%s %s\n' "${1}" "${input}"
+		fi
+	done
+
+}
+
+read_input "${1}"
