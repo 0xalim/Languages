@@ -1,5 +1,0 @@
-#!/usr/bin/sh
-
-
-read -r "input" something
-echo "${something}"
