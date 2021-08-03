@@ -1,5 +1,10 @@
 #!/usr/bin/sh
 
+# Script that adds a comment '#' by default to the start
+# of a line, that is input from the user.
+# If the user adds a prefix as an argument, then use that instead
+# Rwxrob - Commenting out
+
 set -e
 read_input() {
 
