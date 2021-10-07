@@ -1,17 +1,14 @@
 # HTML
 
 ```
-Learnyouhtml content from /denysdovhan
+Learnyouhtml content from @denysdovhan
 ```
 
 Quick refresher on HTML as we've started doing web exploitation in
 my 474 course (/courses/cps474). Thought why not review a couple of
-the basics, this includes:
+basic web stuff and this included some HTML review. Definitely learned
+a few new things since last time i've done HTML was... never. Really easy,
+to use and understand. Good logical flow of things from the few things that
+have been introduced in this part.
 
-1. HTML
-1. JS
-1. NodeJS
-
-I assume we will be using nodeJS as our server-side language in the
-labs and assignments. Not sure yet as we've also done mostly PHP 
-up till now. Who cares though, all for fun.
+*Good work Tim Berners-Lee, and others.*
