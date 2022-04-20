@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+# Script that adds markdown header to output of other script 'now'
+# Rwxrob - Now Command 2
+# Sun Aug  1 12:40:01 AM EDT 2021
+
+set -e
+add_header() {
+	now=`sh ./now`
+	printf '%s %s' "${@}" "${now}"
+}
+
+add_header "$@"

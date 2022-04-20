@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+# Script that prints string in random 256 colors
+# Rwxrob - RGB Command
+
+red="32"
+green="100"
+blue="230"
+
+set -e
+ansi_colors() {
+	# errors
+#	printf "\e[38;2;<230>;<210>;<230>msomething "
+#	printf "\e[38;2;200;213;123msomething "
+#	printf "\e[32m"
+
+	printf "\e[38;2;"$red";"$green";"$blue"msomething "
+	printf "\e[38;2;"$rand_blue";"$rand_green";"$rand_blue"msomething "
+	return
+}
+#ansi_colors
+
+random_ansi() {
+	while true; do
+		rand_red="$(( RANDOM % 255))"
+		rand_green="$(( RANDOM % 255))"
+		rand_blue="$(( RANDOM % 255))"
+		printf "\e[38;2;"$rand_blue";"$rand_green";"$rand_blue"mNyan "
+	done
+}
+
+random_ansi

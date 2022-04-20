@@ -1,0 +1,14 @@
+#!/usr/bin/sh
+
+# Script that infinitely prints out a string 'infinity' with some color
+# via color escape sequence
+# Rwxrob - Nyan Cat
+
+set -e
+infinite_loop() {
+	while true;do
+		printf "\e[32minfinity "
+	done
+}
+
+infinite_loop
