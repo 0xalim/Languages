@@ -1,7 +1,0 @@
-#!/usr/bin/sh
-
-# Script copied off Rwxrob to replace ':' with newline
-# Shows print cases of delimited data
-
-echo -e ${PATH//:/\\n}
-echo ${PATH}

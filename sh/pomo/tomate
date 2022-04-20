@@ -1,0 +1,22 @@
+#!/usr/bin/sh
+
+# Don't know why pomodoro scripts are hard to find that are extremely basic
+# and offer nothing more than a 25 minute timer.
+
+set -e
+
+pomo() {
+   time=$*
+   while [ "$time" -le "$*" ]; do
+      echo "time left for work, $time minutes"
+      sleep 1
+      tput clear
+      ((time--))
+      if [ "$time" -eq 0 ]; then
+         echo "fini, temps de repos"
+         exit 0
+      fi
+   done
+}
+
+pomo "$@"
