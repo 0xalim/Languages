@@ -9,7 +9,7 @@ pomo() {
    time=$*
    while [ "$time" -le "$*" ]; do
       echo "time left for work, $time minutes"
-      sleep 1
+      sleep 60
       tput clear
       ((time--))
       if [ "$time" -eq 0 ]; then
