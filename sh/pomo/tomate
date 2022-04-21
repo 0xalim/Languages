@@ -8,7 +8,7 @@ set -e
 pomo() {
    time=$*
    while [ "$time" -le "$*" ]; do
-      echo "time left for work, $time minutes"
+      printf "time left for work, %d minutes" "$time"
       sleep 60
       tput clear
       ((time--))
